@@ -17,10 +17,10 @@ public class Castle extends BattleLocation{
         int playerHealth = player.getCharacter().getHealth();
         Scanner input = new Scanner(System.in);
         while (playerHealth > 0){
-
+            System.out.println("Here is the BALROG coming toward to you!!");
             System.out.println("What do you want to do?");
             System.out.println("Press 'H' to hit --- Press 'R' to run");
-            String choose = input.nextLine();
+            String choose = input.nextLine().toUpperCase();
 
             if (choose.equals("H")) {
                 if (balrog.obstacleHealth > 0) {

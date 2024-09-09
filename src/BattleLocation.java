@@ -64,8 +64,7 @@ public abstract class BattleLocation extends Location {
 
             System.out.println("What do you want to do?");
             System.out.println("Press 'H' to hit --- Press 'R' to run");
-            String choose = input.nextLine();
-
+            String choose = input.nextLine().toUpperCase();
             if (choose.equals("H")){
                 if (obstacles[j].obstacleHealth > 0) {
                     for (int i = 0; i < tempObstacleNumber; i++) {
